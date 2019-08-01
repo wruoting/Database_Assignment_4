@@ -1,0 +1,26 @@
+1.
+select fname, lname from staff join 
+event_staff on staff.ssn = event_staff.ssn join
+event on event_staff.event_id = event.event_id where
+staff.supervisor in (select ssn from staff where staff.fname='Wilma' and staff.lname = 'Smith')
+and event.event_type = 'Breakfast Meeting';
+2.
+-- morning is before noon
+select count(distinct(staff.ssn)) from staff join 
+event_staff on staff.ssn = event_staff.ssn join
+event on event_staff.event_id = event.event_id where
+event.start_hour < 12;
+3.
+select event.event_id, sum(staff.hourly_rate*event.duration) as total_cost from staff join 
+event_staff on staff.ssn = event_staff.ssn join
+event on event_staff.event_id = event.event_id group by event.event_id;
+4. 
+-- assuming dessert is not a dish
+select dish.dish_id, dish.description, count(distinct(staff.ssn)) as staff_served from staff join 
+event_staff on staff.ssn = event_staff.ssn join
+event on event_staff.event_id = event.event_id join
+menu on event.menu_id=menu.menu_id join
+maincourse on menu.maincourse_id=maincourse.maincourse_id join
+course_item on course_item.maincourse_id = maincourse.maincourse_id join
+dish on dish.dish_id=course_item.dish_id group by dish.dish_id, dish.description;
+
