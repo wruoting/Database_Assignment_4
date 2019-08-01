@@ -27,3 +27,81 @@ end loop;
 dbms_output.new_line;
 end loop;
 end;
+
+
+Connecting to the database shoretoshore.
+Captain ID: 001-01
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+4521	5/8" Plywood - 200 sheets/pallet	800
+4532	Beam	100
+4533	2X4X8 Pine Boards	250
+Captain ID: 001-23
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+7821	Toyota Camry	2000
+7829	Mercedes	2550
+7830	Honda Accord	1960
+Captain ID: 001-24
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+2101	Beans	500
+2109	Corn Meal	200
+2125	Oats	335
+3223	Concrete Forms	500
+3297	Steel Beam	2000
+Captain ID: 001-25
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+3223	Concrete Forms	500
+3297	Steel Beam	2000
+3299	Small Steel Plate	750
+Captain ID: 002-14
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+3212	Cement	2000
+3223	Concrete Forms	500
+4521	5/8" Plywood - 200 sheets/pallet	800
+4534	3/4" Plywood - 200 sheets/pallet	1200
+Captain ID: 002-15
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+3297	Steel Beam	2000
+7821	Toyota Camry	2000
+7823	Mercury Sable	2500
+4521	5/8" Plywood - 200 sheets/pallet	800
+4532	Beam	100
+Captain ID: 003-01
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+2101	Beans	500
+2109	Corn Meal	200
+2123	Rice	300
+2125	Oats	335
+7829	Mercedes	2550
+Captain ID: 003-02
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+2125	Oats	335
+7830	Honda Accord	1960
+Captain ID: 004-01
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+4533	2X4X8 Pine Boards	250
+4534	3/4" Plywood - 200 sheets/pallet	1200
+Captain ID: 004-02
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+2101	Beans	500
+2109	Corn Meal	200
+Captain ID: 004-03
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+3212	Cement	2000
+3223	Concrete Forms	500
+Captain ID: 011-11
+Item Number	Description	Weight
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+Process exited.
+Disconnecting from the database shoretoshore.
+
