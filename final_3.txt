@@ -1,0 +1,29 @@
+1. item.description
+2. shipment_line.item_no
+3. cid
+4. all_captains
+5. cp.capt_id
+create or replace procedure get_items_shipped_capt as
+cursor list_items(cid in captain.capt_id%type) is
+select item.item_no, item.description, weight
+from item, shipment_line,shipment
+where item.item_no = shipment_line.item_no
+and shipment_line.shipment_id = shipment.shipment_id
+and shipment.capt_id = cid;
+cursor all_captains is
+select capt_id
+from captain;
+TB constant char(1) := CHR(9);
+begin
+for cp in all_captains loop
+dbms_output.put_line('Captain ID: '||cp.capt_id);
+dbms_output.new_line;
+dbms_output.put_line('Item Number'||TB||'Description'||TB||'Weight');
+dbms_output.put_line('=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+');
+for det in list_items(cp.capt_id) loop
+dbms_output.put_line(det.item_no||TB||det.description||TB||
+det.weight);
+end loop;
+dbms_output.new_line;
+end loop;
+end;
